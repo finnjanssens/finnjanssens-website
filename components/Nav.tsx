@@ -18,7 +18,7 @@ export default function Nav() {
   return (
     <>
       <nav className="col-span-4 mt-4">
-        <div className="grid grid-cols-4 gap-x-5">
+        <div className="grid grid-cols-4">
           {navItems.map((item, index) => {
             return (
               <Link

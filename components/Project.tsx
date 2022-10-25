@@ -5,7 +5,7 @@ export default function Project({ project }) {
   const media = project.attributes.Media.data;
 
   return (
-    <div className="px-2 col-span-2">
+    <div className="pr-2">
       <Image
         src={`http://localhost:1337${media.attributes.url}`}
         alt=""

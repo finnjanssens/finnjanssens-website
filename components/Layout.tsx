@@ -11,12 +11,12 @@ export default function Layout({ children }) {
         <link rel="stylesheet" href="https://use.typekit.net/nel5nyq.css" />
       </Head>
       <main
-        className="grid grid-cols-5 gap-x-5 h-screen"
+        className="grid grid-cols-5 h-screen"
         style={{ gridTemplateRows: "52px auto" }}
       >
         <Sidebar />
         <Nav />
-        <div className="row-start-2 col-start-2 col-span-4 pt-8 border-l-2 border-black mb-4 grid grid-cols-4 gap-x-5 overflow-y-scroll overflow-x-hidden">
+        <div className="pl-2 row-start-2 col-start-2 col-span-4 p-0 border-l-2 border-black grid grid-cols-4 overflow-y-scroll overflow-x-hidden">
           {children}
         </div>
       </main>

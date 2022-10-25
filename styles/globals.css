@@ -48,7 +48,7 @@ body {
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-track {
