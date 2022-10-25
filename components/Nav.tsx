@@ -37,8 +37,8 @@ export default function Nav() {
 
 function activeNavLink(item: String, path: String) {
   if ((item == "Home" && path == "/") || path == "/" + item.toLowerCase()) {
-    return "border-l-2 border-black pl-2 mb-4 cursor-pointer active";
+    return "pl-2 mb-4 cursor-pointer active";
   } else {
-    return "border-l-2 border-black pl-2 mb-4 cursor-pointer";
+    return "pl-2 mb-4 cursor-pointer";
   }
 }

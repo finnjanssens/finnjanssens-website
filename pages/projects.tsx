@@ -7,7 +7,7 @@ export default function Projects({ projects }) {
   console.log(projects.data);
 
   return (
-    <Layout>
+    <Layout projects={projects}>
       {projects &&
         projects.data.map((project) => {
           return <Project key={project.id} project={project} />;

@@ -9,7 +9,7 @@ import { CheckSquare, Square } from "react-feather";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout projects={null}>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sapiente
         magni laboriosam possimus cupiditate iste. Neque quisquam numquam, est

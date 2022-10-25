@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { fetcher } from "../services/api.service";
 
-export default function Sidebar() {
+export default function Sidebar(projects) {
   const [listItems, setListItems] = useState([]);
   const router = useRouter();
 
@@ -19,7 +19,13 @@ export default function Sidebar() {
         ]);
         break;
       case "/projects":
-        setListItems(["Project"]);
+        let items = [];
+        console.log(projects.projects.data);
+
+        projects.projects.data.forEach((element) => {
+          items.push(element.attributes.Title);
+        });
+        setListItems(["Projects", ...items]);
         break;
       case "/photography":
         setListItems(["Photography"]);
@@ -31,14 +37,24 @@ export default function Sidebar() {
       default:
         break;
     }
-  }, [router]);
+  }, [router, projects]);
 
   return (
-    <div className="row-span-2 m-4 px-4 border-l-4 border-black inline-block">
+    <div
+      className="row-span-2 m-4 px-4 border-l-4 border-black inline-block"
+      id="sidebar"
+    >
       <h1 className="mb-8">Finn</h1>
       {listItems.map((item, index) => {
         return (
-          <p key={index} className="text-lg font-light mb-0">
+          <p
+            key={index}
+            className={
+              index == 0
+                ? "text-xl mb-0 font-bold"
+                : "italic text-lg font-light mb-0"
+            }
+          >
             {item}
           </p>
         );
