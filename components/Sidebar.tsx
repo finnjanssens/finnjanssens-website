@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { fetcher } from "../services/api.service";
+import Image from "next/image";
+import finn from "../public/img/finn-4.png";
 
 export default function Sidebar(projects) {
   const [listItems, setListItems] = useState([]);
@@ -41,7 +43,7 @@ export default function Sidebar(projects) {
 
   return (
     <div
-      className="row-span-2 m-4 px-4 border-l-4 border-black inline-block"
+      className="row-span-2 mx-4 mt-4 px-4 border-l-4 border-black inline-block"
       id="sidebar"
     >
       <h1 className="mb-8 italic" id="sidebar-title">
@@ -61,6 +63,11 @@ export default function Sidebar(projects) {
           </p>
         );
       })}
+      {router.asPath == "/" ? (
+        <Image className="align-bottom" src={finn} alt="a picture of me" />
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

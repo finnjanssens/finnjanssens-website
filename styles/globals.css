@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Garamond Regular";
+  src: url("Garamond\ Premier\ Pro\ Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Garamond Display";
+  src: url("Garamond\ Premier\ Pro\ Display.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+}
+
 :root {
   scroll-behavior: smooth;
-  font-family: garamond-premier-pro-display, serif;
+  font-family: "Garamond Regular", sans-serif;
 }
 
 * {
@@ -12,14 +26,14 @@
 }
 
 h1 {
-  font-family: garamond-premier-pro-display, serif;
+  font-family: "Garamond Display", serif;
   font-weight: 700;
   font-style: normal;
   font-size: 250% !important;
 }
 
 h2 {
-  font-family: garamond-premier-pro-display, serif;
+  font-family: "Garamond Display", serif;
   font-weight: 600;
   font-style: normal;
   font-size: 180% !important;
@@ -27,7 +41,7 @@ h2 {
 
 h3,
 nav a {
-  font-family: garamond-premier-pro-display, serif;
+  font-family: "Garamond Display", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 130% !important;
@@ -38,18 +52,24 @@ nav > div > h2:first-child {
   border-left: solid black 2px;
 }
 
+nav > div > h2 {
+  font-weight: 500;
+}
+
 body {
   background-color: #fff8f0;
 }
 
 .active {
   font-style: italic;
+  font-weight: 600;
   /* margin-bottom: 0; */
 }
 
 #sidebar-title {
   font-size: 400% !important;
   color: transparent;
+  font-weight: 100;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
