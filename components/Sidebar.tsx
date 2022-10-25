@@ -44,7 +44,9 @@ export default function Sidebar(projects) {
       className="row-span-2 m-4 px-4 border-l-4 border-black inline-block"
       id="sidebar"
     >
-      <h1 className="mb-8">Finn</h1>
+      <h1 className="mb-8 italic" id="sidebar-title">
+        Finn
+      </h1>
       {listItems.map((item, index) => {
         return (
           <p

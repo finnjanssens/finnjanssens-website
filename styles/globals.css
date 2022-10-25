@@ -47,6 +47,13 @@ body {
   /* margin-bottom: 0; */
 }
 
+#sidebar-title {
+  font-size: 400% !important;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
