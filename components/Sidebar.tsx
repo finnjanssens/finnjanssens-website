@@ -64,7 +64,7 @@ export default function Sidebar(projects) {
         );
       })}
       {router.asPath == "/" ? (
-        <Image className="align-bottom" src={finn} alt="a picture of me" />
+        <Image src={finn} alt="a picture of me" />
       ) : (
         <></>
       )}

@@ -3,7 +3,7 @@ import Head from "next/head";
 import Nav from "./Nav";
 import Sidebar from "./Sidebar";
 
-export default function Layout({ children, projects }) {
+export default function Layout({ children, projects = null }) {
   return (
     <div>
       <Head>
