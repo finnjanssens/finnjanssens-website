@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IoIosArrowDown } from "react-icons/Io";
+import { IoIosArrowDown } from "react-icons/io";
 
 import finn from "../../public/img/finn.png";
 import styles from "./About.module.css";
