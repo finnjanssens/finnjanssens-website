@@ -27,11 +27,11 @@ export default function HomeHero() {
             </textPath>
           </text>
         </svg>
-        <h1 style={{ marginBottom: "-0.1em" }}>
+        <h1 className={styles.title1}>
           {/* <span className="light">PORTFOLIO</span> */}
           FI<span className="stretch">N</span>N
         </h1>
-        <h1 className={styles.title}>
+        <h1 className={styles.title2}>
           JANSS<span className="stretch">E</span>NS
         </h1>
       </div>
