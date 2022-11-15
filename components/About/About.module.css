@@ -1,7 +1,14 @@
+@media (max-width: 1440px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+}
+
 .aboutContainer {
   width: 70%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
 .aboutContainer h1 {
@@ -44,8 +51,8 @@
 
 .circleSVG {
   position: absolute;
-  top: -5%;
-  right: 24%;
+  top: -20%;
+  right: 0;
   z-index: -1;
   animation: rotation 30s;
   animation-timing-function: linear;
@@ -54,7 +61,7 @@
 
 .circleTextPath {
   fill: white;
-  font-size: 0.788em;
+  font-size: 0.45em;
 }
 
 @keyframes rotation {
@@ -63,5 +70,21 @@
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+@media only screen and (max-device-width: 1440px) {
+  .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+  }
+
+  .imageContainer {
+    width: 70%;
+    margin-bottom: 2em;
+  }
+  .aboutContainer h1 {
+    margin-bottom: 1em;
   }
 }

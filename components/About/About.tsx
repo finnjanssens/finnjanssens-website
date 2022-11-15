@@ -13,24 +13,24 @@ export default function About() {
         <div className={styles.imageContainer}>
           <svg
             viewBox="0 0 300 300"
-            width="300"
-            height="300"
+            width="100%"
+            height="120%"
             className={styles.circleSVG}
           >
             <defs>
               <path
                 id="circle"
                 d="
-        M 0, 140
+        M 0, 100
         m 10, 10
-        a 140,140 0 1,1 280,0
-        a 140,140 0 1,1 -280,0"
+        a 100,100 0 1,1 200,0
+        a 100,100 0 1,1 -200,0"
               />
             </defs>
             <text fontSize="17">
               <textPath xlinkHref="#circle" className={styles.circleTextPath}>
-                Finn • Finn • Finn • Finn • Finn • Finn • Finn • Finn • Finn •
-                Finn • Finn • Finn • Finn • Finn • Finn •
+                ABOUT • ABOUT • ABOUT • ABOUT • ABOUT • ABOUT • ABOUT • ABOUT •
+                ABOUT • ABOUT • ABOUT • ABOUT • ABOUT • ABOUT • ABOUT • ABOUT •
               </textPath>
             </text>
           </svg>
