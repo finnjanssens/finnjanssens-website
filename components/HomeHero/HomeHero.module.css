@@ -2,10 +2,27 @@
   position: absolute;
   top: 0;
   left: -10%;
-  transform: rotate(-138deg);
+  z-index: -1;
+  animation: rotation 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .circleTextPath {
   fill: white;
-  font-size: 0.8em;
+  font-size: 0.76em;
+}
+
+.title {
+  padding: 0.1em 0;
+  background-color: black;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

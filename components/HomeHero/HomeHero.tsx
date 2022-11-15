@@ -23,14 +23,15 @@ export default function HomeHero() {
           <text fontSize="17">
             <textPath xlinkHref="#circle" className={styles.circleTextPath}>
               Portfolio • Portfolio • Portfolio • Portfolio • Portfolio •
-              Portfolio • Portfolio
+              Portfolio • Portfolio • Portfolio • Portfolio •
             </textPath>
           </text>
         </svg>
-        <h1>
+        <h1 style={{ marginBottom: "-0.1em" }}>
           {/* <span className="light">PORTFOLIO</span> */}
           FI<span className="stretch">N</span>N
-          <br />
+        </h1>
+        <h1 className={styles.title}>
           JANSS<span className="stretch">E</span>NS
         </h1>
       </div>
