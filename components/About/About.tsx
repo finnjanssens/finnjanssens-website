@@ -11,6 +11,29 @@ export default function About() {
       <IoIosArrowDown className={styles.scrollArrow} />
       <div className={styles.aboutContainer}>
         <div className={styles.imageContainer}>
+          <svg
+            viewBox="0 0 300 300"
+            width="300"
+            height="300"
+            className={styles.circleSVG}
+          >
+            <defs>
+              <path
+                id="circle"
+                d="
+        M 0, 140
+        m 10, 10
+        a 140,140 0 1,1 280,0
+        a 140,140 0 1,1 -280,0"
+              />
+            </defs>
+            <text fontSize="17">
+              <textPath xlinkHref="#circle" className={styles.circleTextPath}>
+                Finn • Finn • Finn • Finn • Finn • Finn • Finn • Finn • Finn •
+                Finn • Finn • Finn • Finn • Finn • Finn •
+              </textPath>
+            </text>
+          </svg>
           <Image alt="finn" src={finn} placeholder="empty" />
         </div>
         <div className={styles.textContainer}>

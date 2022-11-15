@@ -13,6 +13,7 @@
   width: 100%;
   /* border: 3px solid white; */
   margin-right: 2em;
+  position: relative;
 }
 
 .imageContainer img {
@@ -30,6 +31,7 @@
 
 .textContainer p {
   font-size: 2em;
+  font-weight: 400;
 }
 
 .scrollArrow {
@@ -38,4 +40,28 @@
   right: 50%;
   top: -10%;
   font-size: 2em;
+}
+
+.circleSVG {
+  position: absolute;
+  top: -5%;
+  right: 24%;
+  z-index: -1;
+  animation: rotation 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.circleTextPath {
+  fill: white;
+  font-size: 0.788em;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
