@@ -64,30 +64,10 @@ html {
   align-items: center;
 }
 
-#home__hero h1 span.light {
-  font-family: "Anderson Grotesk Light Oblique";
-  font-size: 0.5em;
-  font-weight: 100;
-  color: white;
-}
-
-#home__hero h1 {
-  font-family: "Anderson Grotesk Black";
-  font-size: 8em;
-  text-align: right;
-  color: white;
-  line-height: 80%;
-}
-
 #home__hero {
   position: relative;
 }
 
-#home__hero svg {
-  position: absolute;
-  top: 0;
-  left: -10%;
-}
 .row {
   display: flex;
   flex-direction: row;
