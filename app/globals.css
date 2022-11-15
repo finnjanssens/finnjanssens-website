@@ -42,12 +42,13 @@
 }
 
 :root {
-  font-family: "Anderson Grotesk", serif;
+  font-family: "Anderson Grotesk", sans-serif;
   letter-spacing: 0.2em;
 }
 
 html {
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -62,6 +63,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #home__hero {
@@ -84,8 +86,23 @@ span.stretch {
   transform: scale(2, 1);
 }
 
+h1 {
+  font-family: "Anderson Grotesk Black", sans-serif;
+  font-size: 8em;
+  text-align: right;
+  color: white;
+  line-height: 80%;
+}
+
 h2 {
-  font-family: "Anderson Grotesk Ultrabold";
+  font-family: "Anderson Grotesk Ultrabold", sans-serif;
   color: white;
   font-size: 5em;
+}
+
+p {
+  font-family: "Anderson Grotesk", sans-serif;
+  letter-spacing: normal;
+  font-weight: normal;
+  color: white;
 }

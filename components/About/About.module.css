@@ -1,0 +1,41 @@
+.aboutContainer {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContainer h1 {
+  font-size: 4em;
+  text-align: left;
+}
+
+.imageContainer {
+  width: 100%;
+  /* border: 3px solid white; */
+  margin-right: 2em;
+}
+
+.imageContainer img {
+  object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.textContainer p {
+  font-size: 2em;
+}
+
+.scrollArrow {
+  fill: white;
+  position: absolute;
+  right: 50%;
+  top: -10%;
+  font-size: 2em;
+}

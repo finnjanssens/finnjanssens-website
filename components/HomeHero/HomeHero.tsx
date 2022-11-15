@@ -27,7 +27,7 @@ export default function HomeHero() {
             </textPath>
           </text>
         </svg>
-        <h1 className={styles.title}>
+        <h1>
           {/* <span className="light">PORTFOLIO</span> */}
           FI<span className="stretch">N</span>N
           <br />
