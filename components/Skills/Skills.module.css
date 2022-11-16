@@ -12,3 +12,9 @@
   justify-items: center;
   gap: 4em;
 }
+
+@media only screen and (max-device-width: 1440px) {
+  .skillsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
