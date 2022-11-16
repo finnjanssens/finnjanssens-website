@@ -16,11 +16,27 @@
   animation-iteration-count: infinite;
 }
 
-/* @keyframes rotation {
+.hoverTitle {
+  color: black;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  font-size: 1em;
+  transform-origin: center;
+  width: 100%;
+  text-align: center;
+}
+
+.skillContainer:hover .hoverTitle {
+  display: block;
+}
+
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(359deg);
   }
-} */
+}

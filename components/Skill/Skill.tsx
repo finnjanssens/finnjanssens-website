@@ -15,6 +15,7 @@ export default function Skill(props: SkillProps) {
   const r = props.width / 2 - props.width * 0.1;
   return (
     <div
+      className={styles.skillContainer}
       style={{
         position: "relative",
         width: props.width,
@@ -23,6 +24,7 @@ export default function Skill(props: SkillProps) {
         justifyContent: "center",
       }}
     >
+      <p className={styles.hoverTitle}>{props.skill}</p>
       <svg
         viewBox={viewbox}
         width="100%"
