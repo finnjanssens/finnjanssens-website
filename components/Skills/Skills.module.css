@@ -1,0 +1,14 @@
+.skillsSectionContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 8em 0;
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 4em;
+}

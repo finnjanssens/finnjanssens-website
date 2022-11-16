@@ -106,3 +106,9 @@ p {
   font-weight: normal;
   color: white;
 }
+
+.sectionTitle {
+  font-size: 4em;
+  text-align: left;
+  margin-bottom: 1em;
+}

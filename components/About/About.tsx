@@ -7,7 +7,7 @@ import styles from "./About.module.css";
 
 export default function About() {
   return (
-    <div className="fullscreen__container" id="about">
+    <div className="fullscreen__container">
       <IoIosArrowDown className={styles.scrollArrow} />
       <div className={styles.aboutContainer}>
         <div className={styles.imageContainer}>
@@ -37,7 +37,7 @@ export default function About() {
           <Image alt="finn" src={finn} placeholder="empty" />
         </div>
         <div className={styles.textContainer}>
-          <h1>
+          <h1 className="sectionTitle">
             AB<span className="stretch">O</span>UT M
             <span className="stretch">E</span>
           </h1>
