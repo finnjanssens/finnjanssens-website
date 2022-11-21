@@ -19,7 +19,6 @@
 
 .title2 {
   padding: 0.1em 0;
-  background-color: black;
 }
 
 @keyframes rotation {
@@ -39,7 +38,6 @@
 
   .title1 {
     font-size: 15em;
-    background-color: black;
     padding: 0.05em 0;
   }
 

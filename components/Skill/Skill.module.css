@@ -11,9 +11,9 @@
 
 .marqueeText {
   transform-origin: center;
-  animation: rotation 30s;
+  /* animation: rotation 30s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 
 .hoverTitle {

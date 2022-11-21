@@ -2,7 +2,7 @@ import styles from "./HomeHero.module.css";
 
 export default function HomeHero() {
   return (
-    <div className="fullscreen__container">
+    <div className="fullscreen__container" id="home__section">
       <div id="home__hero">
         <svg
           viewBox="0 0 300 300"

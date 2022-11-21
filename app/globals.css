@@ -66,6 +66,12 @@ html {
   position: relative;
 }
 
+/* #home__section {
+  background-image: url("../public/img/finn2.png");
+  background-repeat: no-repeat;
+  background-position: 90%;
+} */
+
 #home__hero {
   position: relative;
 }
