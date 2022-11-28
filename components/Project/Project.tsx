@@ -6,9 +6,11 @@ import Link from "next/link";
 export type Tproject = {
   title: string;
   description: string;
-  media: URL;
+  media: string;
+  width: number;
+  height: number;
   finishedDate: Date;
-  URL: URL;
+  URL: string;
 };
 
 type Tprops = {
@@ -18,27 +20,34 @@ type Tprops = {
 export default function Project(props: Tprops) {
   return (
     <div className={styles.project__container}>
-      <h1 className={styles.projectTitle}>FINAL SHOW 2022</h1>
+      <h1 className={styles.projectTitle}>{props.project.title}</h1>
       <div className={styles.imageContainer}>
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          alt={styles.projectTitle}
           className={styles.projectImage}
-          src={screenshot}
-          alt="screenshot"
-          placeholder="empty"
+          src={props.project.media}
         />
       </div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt nam
-        provident quod, nobis ipsa debitis molestias earum. Minus quo aliquam
-        officia quasi. Dolor blanditiis voluptatem ipsam alias similique
-        consectetur exercitationem?
-      </p>
+      <p>{props.project.description}</p>
       <div className={styles.linkContainer}>
-        <Link href={"finnjanssens.be"} className={styles.link}>
-          finnjanssens.be
+        <Link href={props.project.URL} className={styles.link}>
+          {getProperLinkTitle(props.project.URL)}
         </Link>
-        <p className={styles.date}>21/11/2022</p>
+        <p className={styles.date}>
+          {props.project.finishedDate.toDateString()}
+        </p>
       </div>
     </div>
   );
 }
+
+const getProperLinkTitle = (link: string) => {
+  if (link.includes("youtube")) {
+    return "Watch Video";
+  } else if (link.includes("github")) {
+    return "Github Repo";
+  } else {
+    return link;
+  }
+};

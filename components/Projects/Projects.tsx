@@ -2,17 +2,11 @@ import styles from "./Projects.module.css";
 import Project from "../Project/Project";
 import { Tproject } from "../Project/Project";
 
-export default function Projects() {
-  const project: Tproject = {
-    title: "Test project 2022",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam optio dolores, facere quae veritatis amet nihil in neque? Cupiditate sed nihil doloribus asperiores saepe perferendis aperiam nesciunt praesentium velit optio!",
-    finishedDate: new Date(),
-    media: new URL(
-      "https://colibriwp.com/blog/wp-content/uploads/2018/07/banner-redimensionat.jpg"
-    ),
-    URL: new URL("https://finnjanssens.be"),
-  };
+type Tprops = {
+  projects: Tproject[];
+};
+
+export default function Projects(props: Tprops) {
   return (
     <div className="fullscreen__container">
       <div className={styles.projectsSectionContainer}>
@@ -20,10 +14,10 @@ export default function Projects() {
           PROJ<span className="stretch">E</span>CTS
         </h1>
         <div className={styles.projects__container}>
-          <Project project={project} />
-          <Project project={project} />
-          <Project project={project} />
-          <Project project={project} />
+          {props.projects &&
+            props.projects.map((project, i) => {
+              return <Project key={i} project={project} />;
+            })}
         </div>
       </div>
     </div>
