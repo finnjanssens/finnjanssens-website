@@ -1,0 +1,10 @@
+.tagContainer {
+  padding: 0.5em 0.25em;
+  background-color: yellow;
+}
+
+.tagStyle {
+  font-family: "Anderson Grotesk Bold";
+  font-weight: 800;
+  color: black;
+}

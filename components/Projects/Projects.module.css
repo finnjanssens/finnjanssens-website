@@ -1,7 +1,8 @@
 .projects__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6em;
+  column-gap: 6em;
+  row-gap: 8;
   width: 100%;
 }
 

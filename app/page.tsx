@@ -18,6 +18,7 @@ export default async function HomePage() {
       URL: project.attributes.URL,
       width: project.attributes.Image.data.attributes.formats.small.width,
       height: project.attributes.Image.data.attributes.formats.small.height,
+      tags: project.attributes.Tags,
     };
   });
   return (

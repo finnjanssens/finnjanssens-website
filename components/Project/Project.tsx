@@ -1,6 +1,5 @@
 import styles from "./Project.module.css";
-import Image from "next/image";
-import screenshot from "../../public/img/screenshot.png";
+import Tag from "../Tag/Tag";
 import Link from "next/link";
 
 export type Tproject = {
@@ -11,6 +10,7 @@ export type Tproject = {
   height: number;
   finishedDate: Date;
   URL: string;
+  tags: string[];
 };
 
 type Tprops = {
