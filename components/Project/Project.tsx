@@ -48,6 +48,6 @@ const getProperLinkTitle = (link: string) => {
   } else if (link.includes("github")) {
     return "Github Repo";
   } else {
-    return link;
+    return link.replace("https://", "");
   }
 };

@@ -7,7 +7,7 @@ import { Tproject } from "../components/Project/Project";
 
 export default async function HomePage() {
   const projectsResp = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/projects?populate=*`
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/projects?populate=*&sort=Score%3Adesc`
   );
   const projects: Tproject[] = projectsResp.map((project: any): Tproject => {
     return {

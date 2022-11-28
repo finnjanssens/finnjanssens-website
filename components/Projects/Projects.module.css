@@ -11,3 +11,9 @@
   flex-direction: column;
   margin: 8em 0;
 }
+
+@media only screen and (max-device-width: 1440px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+}

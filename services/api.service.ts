@@ -7,5 +7,7 @@ export async function fetcher(url: string, options: any = {}) {
   }
 
   const data = await response.json();
+  console.log(data.data);
+
   return data.data;
 }
