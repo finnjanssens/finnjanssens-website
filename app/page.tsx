@@ -4,7 +4,7 @@ import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
 import { fetcher } from "../services/api.service";
 import { Tproject } from "../components/Project/Project";
-import Terminal from "../components/Terminal/Terminal";
+import Head from "next/head";
 
 export default async function HomePage() {
   const projectsResp = await fetcher(
@@ -24,6 +24,17 @@ export default async function HomePage() {
   });
   return (
     <div className="home">
+      <Head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="Author" content="Finn Janssens" key="author" />
+        <meta
+          name="description"
+          content="Hi! I’m Finn, a student Multimedia and Creative Technology at Erasmus Colleges Brussels. I’m passionate about creating and love anything technology-related. During my education in Multimedia and Creative Technology I’ve grown a big interest for the front-end, the back-end and everything in between."
+        />
+        <title>Finn Janssens | Portfolio</title>
+      </Head>
       <HomeHero />
       <About />
       <Skills />
