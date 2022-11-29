@@ -32,9 +32,14 @@ export default function Project(props: Tprops) {
       <div className={styles.infoContainer}>
         <p>{props.project.description}</p>
         <div className={styles.linkContainer}>
-          <Link href={props.project.URL} className={styles.link}>
+          <a
+            className={styles.link}
+            target="_blank"
+            href={props.project.URL}
+            rel="noopener noreferrer"
+          >
             {getProperLinkTitle(props.project.URL)}
-          </Link>
+          </a>
           <p className={styles.date}>
             {props.project.finishedDate.toDateString()}
           </p>
