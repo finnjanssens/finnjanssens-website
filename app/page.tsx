@@ -4,6 +4,7 @@ import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
 import { fetcher } from "../services/api.service";
 import { Tproject } from "../components/Project/Project";
+import Terminal from "../components/Terminal/Terminal";
 
 export default async function HomePage() {
   const projectsResp = await fetcher(
@@ -27,6 +28,7 @@ export default async function HomePage() {
       <About />
       <Skills />
       <Projects projects={projects} />
+      {/* <Terminal /> */}
     </div>
   );
 }
