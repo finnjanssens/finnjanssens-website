@@ -1,0 +1,27 @@
+.contactContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactContainer a {
+  font-family: "Anderson Grotesk Ultrabold";
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  letter-spacing: normal;
+  padding: 1em 0;
+  line-height: normal;
+}
+
+.contactContainer svg {
+  stroke: white;
+  margin-right: 3em;
+}
+
+.contactContainer > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3em;
+}

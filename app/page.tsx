@@ -5,6 +5,7 @@ import Projects from "../components/Projects/Projects";
 import { fetcher } from "../services/api.service";
 import { Tproject } from "../components/Project/Project";
 import Head from "next/head";
+import Contact from "../components/Contact/Contact";
 
 export default async function HomePage() {
   const projectsResp = await fetcher(
@@ -28,6 +29,7 @@ export default async function HomePage() {
       <About />
       <Skills />
       <Projects projects={projects} />
+      <Contact />
       {/* <Terminal /> */}
     </div>
   );

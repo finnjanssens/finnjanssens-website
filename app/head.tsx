@@ -3,7 +3,7 @@ export default function Head({ params }) {
     <>
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      {/* <meta name="viewport" content="width=device-width,initial-scale=1.0" /> */}
       <meta name="Author" content="Finn Janssens" key="author" />
       <meta
         name="description"
