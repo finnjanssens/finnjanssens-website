@@ -29,14 +29,16 @@ export default function Project(props: Tprops) {
           src={props.project.media}
         />
       </div>
-      <p>{props.project.description}</p>
-      <div className={styles.linkContainer}>
-        <Link href={props.project.URL} className={styles.link}>
-          {getProperLinkTitle(props.project.URL)}
-        </Link>
-        <p className={styles.date}>
-          {props.project.finishedDate.toDateString()}
-        </p>
+      <div className={styles.infoContainer}>
+        <p>{props.project.description}</p>
+        <div className={styles.linkContainer}>
+          <Link href={props.project.URL} className={styles.link}>
+            {getProperLinkTitle(props.project.URL)}
+          </Link>
+          <p className={styles.date}>
+            {props.project.finishedDate.toDateString()}
+          </p>
+        </div>
       </div>
     </div>
   );
