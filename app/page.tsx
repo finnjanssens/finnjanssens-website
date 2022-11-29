@@ -28,7 +28,7 @@ export default async function HomePage() {
       <About />
       <Skills />
       <Projects projects={projects} />
-      <Terminal />
+      {/* <Terminal /> */}
     </div>
   );
 }
