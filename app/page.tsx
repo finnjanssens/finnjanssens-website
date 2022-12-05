@@ -7,6 +7,7 @@ import { Tproject } from "../components/Project/Project";
 import Head from "next/head";
 import Contact from "../components/Contact/Contact";
 import Link from "next/link";
+import Navigation from "../components/Navigation/Navigation";
 
 export default async function HomePage() {
   const projectsResp = await fetcher(
@@ -26,6 +27,7 @@ export default async function HomePage() {
   });
   return (
     <div className="home">
+      <Navigation />
       <HomeHero />
       <About />
       <Skills />

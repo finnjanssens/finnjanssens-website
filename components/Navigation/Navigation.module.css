@@ -1,0 +1,23 @@
+.navContainer {
+  position: fixed;
+  top: 0;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+  z-index: 2;
+}
+
+.navContainer > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Anderson Grotesk Light";
+  transition: font-size 0.2s ease-in-out;
+}
+
+.navContainer > a:hover {
+  font-size: 1.5em;
+  transition: font-size 0.2s ease-in-out;
+}

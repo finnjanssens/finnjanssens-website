@@ -56,6 +56,12 @@
   letter-spacing: normal;
   margin-bottom: 1em;
   font-size: 0.8em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.link:hover {
+  transform: scale(110%);
+  transition: transform 0.2s ease-in-out;
 }
 
 .date {
