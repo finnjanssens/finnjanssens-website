@@ -7,7 +7,7 @@ import styles from "./About.module.css";
 
 export default function About() {
   return (
-    <div className="fullscreen__container">
+    <div className="fullscreen__container" id="about__section">
       <IoIosArrowDown className={styles.scrollArrow} />
       <div className={styles.aboutContainer}>
         <div className={styles.imageContainer}>

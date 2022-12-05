@@ -3,7 +3,7 @@ import { Send, Linkedin, GitHub } from "react-feather";
 
 export default function Contact() {
   return (
-    <div className="fullscreen__container">
+    <div className="fullscreen__container" id="contact__section">
       <div className={styles.contactContainer}>
         <h1 className="sectionTitle">
           CONT<span className="stretch">A</span>CT

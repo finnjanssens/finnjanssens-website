@@ -3,7 +3,7 @@ import Skill from "../Skill/Skill";
 
 export default function Skills() {
   return (
-    <div className="fullscreen__container">
+    <div className="fullscreen__container" id="skills__section">
       <div className={styles.skillsSectionContainer}>
         <h1 className="sectionTitle">
           S<span className="stretch">K</span>ILLS

@@ -8,7 +8,7 @@ type Tprops = {
 
 export default function Projects(props: Tprops) {
   return (
-    <div className="fullscreen__container">
+    <div className="fullscreen__container" id="projects__section">
       <div className={styles.projectsSectionContainer}>
         <h1 className="sectionTitle">
           PROJ<span className="stretch">E</span>CTS

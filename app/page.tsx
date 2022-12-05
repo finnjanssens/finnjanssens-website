@@ -6,6 +6,7 @@ import { fetcher } from "../services/api.service";
 import { Tproject } from "../components/Project/Project";
 import Head from "next/head";
 import Contact from "../components/Contact/Contact";
+import Link from "next/link";
 
 export default async function HomePage() {
   const projectsResp = await fetcher(
