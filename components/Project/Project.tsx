@@ -24,7 +24,7 @@ export default function Project(props: Tprops) {
       <div className={styles.imageContainer}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          alt={styles.projectTitle}
+          alt={props.project.title}
           className={styles.projectImage}
           src={props.project.media}
         />
