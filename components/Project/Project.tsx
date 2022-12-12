@@ -17,9 +17,39 @@ type Tprops = {
   project: Tproject;
 };
 
+function getTagColor(tag: string): string {
+  let colors = {
+    React: "#61DBFB",
+    Angular: "#B52E31",
+    Arduino: "#00979C",
+    Laravel: "#F05340",
+  };
+
+  return colors[tag] || "#fff";
+}
+
 export default function Project(props: Tprops) {
   return (
     <div className={styles.project__container}>
+      <div className={styles.tagsContainer}>
+        {props.project.tags ? (
+          props.project.tags.map((tag, i) => {
+            return (
+              <Tag
+                name={tag}
+                key={props.project.title.replace(" ", "") + i}
+                bgColor={getTagColor(tag)}
+              />
+            );
+          })
+        ) : (
+          <Tag
+            name="NO TAGS"
+            key={props.project.title.replace(" ", "") + 1}
+            bgColor="#000"
+          />
+        )}
+      </div>
       <h1 className={styles.projectTitle}>{props.project.title}</h1>
       <div className={styles.imageContainer}>
         {/* eslint-disable-next-line @next/next/no-img-element */}

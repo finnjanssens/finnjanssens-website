@@ -70,6 +70,12 @@
   font-size: 0.7em;
 }
 
+.tagsContainer {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
 @media only screen and (max-device-width: 1440px) {
   .project__container {
     grid-template-rows: 0.4fr 0.2fr;
