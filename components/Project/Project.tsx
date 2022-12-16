@@ -23,6 +23,9 @@ function getTagColor(tag: string): string {
     Angular: "#B52E31",
     Arduino: "#00979C",
     Laravel: "#F05340",
+    "Expert Lab": "#36f76a",
+    Video: "#8629ff",
+    "Next JS": "#0070f3",
   };
 
   return colors[tag] || "#fff";
