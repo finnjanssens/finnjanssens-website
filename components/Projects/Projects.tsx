@@ -7,6 +7,8 @@ type Tprops = {
 };
 
 export default function Projects(props: Tprops) {
+  console.log(props.projects);
+
   return (
     <div className="fullscreen__container" id="projects__section">
       <div className={styles.projectsSectionContainer}>
